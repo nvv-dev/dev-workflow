@@ -23,7 +23,7 @@ Skills de ingeniería para agentes de código: cómo probar, depurar, revisar, e
 | [pre-deploy-audit](skills/pre-deploy-audit/SKILL.md) | Bloqueantes antes de un release y plan de despliegue con rollback | Sola, antes de desplegar |
 | [threat-modeling](skills/threat-modeling/SKILL.md) | Modelo de amenazas por dominio antes de implementar | Sola, en planes con datos sensibles |
 | [architecture-review](skills/architecture-review/SKILL.md) | Candidatos de refactorización donde más cambia el código | Solo a mano |
-| [anti-generic-design-review](skills/anti-generic-design-review/SKILL.md) | Detecta los rasgos de diseño "hecho por IA" y reemplaza cada uno por una decisión propia | Sola, antes de entregar un diseño y en PR de interfaz |
+| [anti-generic-design-review](skills/anti-generic-design-review/SKILL.md) | Detecta los rasgos de diseño "hecho por IA" en capturas a 390, 768 y 1440 px y reemplaza cada uno por una decisión propia | Sola, antes de entregar un diseño y en PR de interfaz |
 
 "Solo a mano" significa que la skill tiene `disable-model-invocation: true`: no se carga sola y la invocas tú (por ejemplo `/dev-workflow:devils-advocate`). Así no ocupa contexto en cada sesión.
 

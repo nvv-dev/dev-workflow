@@ -10,9 +10,20 @@ An interface looks "made by AI" when every choice is the default one. The fix is
 ## How to review
 
 1. Read the art direction (references, tone, what to avoid) and the page's purpose. Without them you can only judge taste, so ask for them first.
-2. Look at the page at mobile and desktop widths and go through the traits below, one by one.
+2. Capture the page and look at the captures, not at the code (see the screenshot loop below), then go through the traits below, one by one.
 3. For each trait found, write where it is, why it reads as generic here, and the replacement decision. "Make it more original" is not a replacement.
 4. Check that each replacement still meets the design system: tokens, contrast AA, focus states and the type scale.
+5. After the replacements are applied, capture again at the same widths and compare with the first round. A fix that only looks right in the code is not done.
+
+## Screenshot loop
+
+Review what the browser renders, at three widths: **390 px** (phone), **768 px** (tablet) and **1440 px** (desktop).
+
+- Use Playwright from the project if it is already a dependency, or the Playwright tooling the user has approved. Ask the user before installing browsers or packages, and never install them globally on their machine.
+- Open only local files, a local dev server or a preview URL the user gave you. Do not log in, submit forms or click through payment or account flows.
+- Capture full-page screenshots, one per width, named `<page>-<width>.png`, into a folder the user agrees on (for example `design-review/`), and keep that folder out of git unless the user wants the captures committed.
+- Look at every capture before writing findings. Check what code reading misses: overflow and horizontal scroll, text that wraps badly, elements that collide, images cropped wrong, and a hierarchy that only works at one width.
+- If no browser is available, say so in the output and review the code and the mockups instead; do not claim you looked at the page.
 
 ## Generic traits and their replacements
 
@@ -42,6 +53,7 @@ The list is not a ban. A trait is fine when the art direction asks for it on pur
 
 ```
 Verdict: ready | ready with changes | rework
+Captures: before and after, at 390, 768 and 1440 px (paths), or "no browser available"
 Generic traits found:
 - where (page/section or file:line) — trait — why it is generic here — replacement decision
 Kept on purpose:
