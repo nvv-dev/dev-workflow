@@ -1,0 +1,13 @@
+{
+  "name": "dev-workflow",
+  "version": "0.1.0",
+  "description": "Engineering workflow skills: TDD, systematic debugging, verification before completion, deep and maintainability code reviews, EARS acceptance criteria, ADRs, plan grilling, devil's advocate, triage, worktrees, pre-deploy audit, threat modeling and architecture review.",
+  "author": {
+    "name": "nvvdev",
+    "url": "https://github.com/nvv-dev"
+  },
+  "homepage": "https://github.com/nvv-dev/dev-workflow",
+  "repository": "https://github.com/nvv-dev/dev-workflow",
+  "license": "MIT",
+  "keywords": ["skills", "tdd", "debugging", "code-review", "adr", "ears", "threat-modeling"]
+}
