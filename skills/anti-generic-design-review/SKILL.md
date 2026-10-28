@@ -38,6 +38,7 @@ Review what the browser renders, at three widths: **390 px** (phone), **768 px**
 | Everything centered, every section the same width | No rhythm and no reading path | Left-aligned text for anything longer than a line; vary width and alignment between sections to set a path |
 | Decorative glow, glassmorphism, oversized rounded corners and shadows on everything | Effects stand in for decisions | One elevation and radius style from the tokens, used consistently and sparingly |
 | Placeholder social proof (fake logos, invented testimonials, "Trusted by 10,000+") | Unverifiable claims destroy trust and can be illegal | Real, approved proof only; otherwise remove the section |
+| Warm cream or paper base (for example #F4F1EA) with a terracotta, vermilion or brick accent, often with a serif or mono "editorial" type | The "paper and ink" look is a default that keeps reappearing in generated interfaces; the palette comes from a mood, not from the brand | Derive the palette from one attribute of the brand or the content; use a cool or white base and an accent outside the red-orange family; verify contrast with a computed ratio |
 | Emoji as icons in headings and lists | Signals a template, renders differently on every platform | The icon set from the design system, or no icon |
 
 The list is not a ban. A trait is fine when the art direction asks for it on purpose and the review can say why it fits this brand.
@@ -63,3 +64,5 @@ Kept on purpose:
 ## Known failures
 
 _Record real mistakes here with a date and the rule that prevents them._
+
+- 2026-10-28: A design review passed a landing built on a warm cream base (#F4F1EA) with a vermilion accent and an editorial serif, because it looked refined and had no purple gradient. That is the same default in a different costume. Look: warm paper base, accent in the burnt red-orange family (terracotta, vermilion, brick), serif or mono "editorial" type. Why generic: it is the "paper and ink" look generated interfaces fall back to, chosen for mood rather than for the brand. Detect it with this checklist: (1) is the base a warm off-white or cream? (2) is the accent terracotta, vermilion or brick? (3) can you name the brand or content attribute that produced this palette? If (1) and (2) are yes and (3) is no, flag it. Replace it with a deliberate decision: derive the palette from a brand or content attribute, use a cool or white base with an accent outside the terracotta family, and verify contrast with computed ratios, not by eye. Keep it only if the art direction explicitly asks for it and states why.
