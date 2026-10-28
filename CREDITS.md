@@ -19,6 +19,6 @@ These skills were written from scratch. No text was copied from the projects bel
 | pre-deploy-audit | [Hainrixz/all-deploy](https://github.com/Hainrixz/all-deploy) (pre-deploy audit, preview → health check → production) |
 | threat-modeling | [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) (attack domains), [Hainrixz/cyber-neo](https://github.com/Hainrixz/cyber-neo) (reference lists), [Hainrixz/agente-pagokit](https://github.com/Hainrixz/agente-pagokit) (payment pitfalls) |
 | architecture-review | [mattpocock/skills](https://github.com/mattpocock/skills) (improve-codebase-architecture) |
-| anti-generic-design-review | [anthropics/skills](https://github.com/anthropics/skills) (frontend-design: avoiding default, generic aesthetics) |
+| anti-generic-design-review | [anthropics/skills](https://github.com/anthropics/skills) (frontend-design: avoiding default, generic aesthetics), [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) (look-and-fix loop with screenshots) |
 
 General practices (short `SKILL.md`, descriptions written as triggers, "known failures" sections, progressive loading) come from [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice).
